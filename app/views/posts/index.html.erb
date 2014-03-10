@@ -1,0 +1,27 @@
+
+<h1 align="center">Coming Soon!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Created</th>
+      <th>Edit</th>
+      <th>Delete?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= link_to post.title, post_path(post) %></td>
+        <td><%= post.content %></td>
+        <td><%= post.created_at %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), :class => 'tiny button success'%></td>
+        <td><%= link_to 'Destroy', post, :class => 'tiny button alert', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
