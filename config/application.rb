@@ -20,6 +20,6 @@ module Portfolio
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.secret_key_base = 'blipblapblup'
+    config.secret_key_base = 'be5d64f0202746c328a0b9f1667c6b5a76bcd41c0d7d907435b8ab3e8c0c95e0727f4cf7ddf96c09cba56929d9af9ca7ab80dd1b147acf009aa56975799265e6'
   end
 end
